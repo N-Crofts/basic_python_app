@@ -1,0 +1,28 @@
+<!-- howdy/templates/index.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Python</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1 class="display-4">Python vs Gator</h1>
+            <img src="https://media.giphy.com/media/PqD5FbCr2OFxK/giphy.gif" alt="a python fighting an alligator" />
+            <br>
+            <br>
+            <p class="lead">who wins?</p>
+            <hr class="my-4">
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="/python" role="button">Python</a>
+                <a class="btn btn-primary btn-lg" href="/gator" role="button">Gator</a>
+            </p>
+            <a href="/about">About Me</a>
+        </div>        
+    </body>
+</html>
